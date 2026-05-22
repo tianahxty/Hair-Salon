@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f8e4df;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    background-color: #f1e8e3;
+    background-attachment: fixed;
+    position: sticky;
+    z-index: 100;
+}
+
+.navclass a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    /* transition- color: 0.3s; */
+}
+
+.navclass a:hover{
+    color: purple;
+}
+
+ .navbar div a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.hero{
+    height: 150vh;
+    background: linear-gradient(rgba(246, 217, 211, 0.6), rgba(246, 217, 211, 0.6)), 
+    url(images/Bg\ img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    padding: o 60px;
+}
+.herocontent{
+    max-width: 700px;
+    margin-left: 40px;
+}
+.herocontent h1{
+    font-family: 'Brush script MT', cursive;;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.herocontent p{
+    font-family: 'Brush script MT', cursive;;
+    font-size: 40px;
+    color: #333;
+}
+
+.sect{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 60px;
+}
+
+.sectclass{
+    position: relative;
+    overflow: hidden;
+    height: 50vh;  
+}
+
+.sectclass img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.section{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/background\ img2.avif);
+    background-size: 100% 150%, 100% 150%;
+    background-position: left center, right center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.heroclass{
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 20px 70px;
+    width: 500px;
+    text-align: center;
+}
+
+.heroclass .line{
+    width: 15%;
+    margin-left: 140px;
+}
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+#myBtn:hover{
+    background-color: grey;
+}
+.heroclass h2{
+    font-family: 'Brush script MT', cursive;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.price-list div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    font-size: 14px 0;
+    font-weight: lighter;
+}
+
+.booknow{
+    margin-top: 30px;
+    cursor: pointer;
+}
+.booknow a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.booknow a:hover{
+    color: red;
+}
+
+.booking{
+    min-height: 100vh;
+    background-image: none;
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.booking hr{
+        width: 10%;
+        margin-top: 30px;
+    }
+
+.booking-title{
+        font-family: 'Brush script MT', cursive;
+        font-size: 40px;
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 30px;
+}
+
+.booking-container{
+        width: 80%;
+        max-width: 900px;
+}
+    
+.booking-card{
+        border: 2px solid #fff;
+        padding: 40px;
+        margin-bottom: 40px;
+        color: #fff;
+}
+
+.booking-card h3{
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        margin-left: 150px;
+}
+
+.description{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+.line{
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 150px;
+}
+
+.time, .price{
+    font-size: 14px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+    
+.booking-buttn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f6b5b0;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.booking-buttn :hover{
+    opacity: 0.8;
+}
+
+.Testimonial{
+    background-color: #e6dbd9;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+    
+.Testimonial hr{
+    width: 5%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.Testimonial-title{
+    font-family:  'Great Vibes', cursive;
+    font-size: 70px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.Testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.testimonials{
+    flex: 1;
+    max-width: 300px;
+    margin: auto;
+}
+
+.quote .fa-quote-left{
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #333;
+    font-style: italic;
+}
+
+.testimonials p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonials h4{
+    font-size: 15px;
+    font-weight: normal;
+    color: #0c0c0c;
+}
+
+.testimonials span{
+    font-style: italic;
+    color: #777;
+}
+    
+.body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-footer{
+    background-color: #f0cca8;
+    background-attachment: fixed;
+    color: #ffffff; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    background-color: #0c0c0c;
+}
+
+.divider{
+    width: 10%;
+    height: 3px;
+    background-color: #f0cca8; 
+    margin: 0 auto 20px;
+}
+
+.title{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.contact-info  p{
+    font-size: 0.95rem;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+
+    
+.opening-hours p{
+    font-size: 0.95rem;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    font-weight: 400px;
+    width: 100%;
+    margin-bottom: 20px;  
+}
+
+.opening-hours h3{
+    margin-top: 40px;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    font-weight: 400px;
+}
+
+.contact-form{
+    margin-top: 50px;
+    text-align: left;
+}
+
+.form-row{
+    display: flex;
+    gap: 20px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-color: #c4a484;
+    flex: 1;
+}
+
+.form-group input{
+    width: 50%;
+    padding: 0.5rem;
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+}
+
+.form-group input::placeholder{
+    padding: 20px;
+    color: rgb(50, 59, 37);
+}
+
+.form-group textarea{
+    width: 80%;
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+}
+
+.form-group textarea::placeholder{
+    padding: 20px;
+    color: rgb(50, 59, 37);
+}
+
+.submit-btn{
+    margin-left: 30px;
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.submit-btn:hover{
+    color: rebeccapurple;
+}
+
+.directions a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.directions a:hover{
+    color: yellowgreen;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sect{
+        grid-template-columns: 1fr;
+    }
+
+    .sectclass img{
+        height: 50vh;
+        width: 150%;
+    }
+        
+    .section:before{
+        background-position: center center;
+        width: 100%;
+    }
+        
+    .heroclass{
+        width: 90%;
+        padding: 20px;
+    }
+        
+    .booking-card h3, .description, .time, .price{
+        margin-left: 0;
+    }
+        
+    .line{
+        margin-left: 0;
+    }
+        
+    .booking-buttn{
+        margin-left: 0;
+    }
+
+    /* Responsive adjustments for booking cards and layout */
+    .booking-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        padding: 0 10px 30px;
+    }
+
+    .booking-card{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px;
+    }
+
+    .booking-card h3{
+        font-size: 1.1rem;
+    }
+
+    .price-list{
+        padding: 0 10px;
+    }
+
+    .hero{
+        background-position: center;
+        height: 40vh;
+    }
+
+    .herocontent h1{font-size: 2rem}
+    .herocontent p{font-size: 1rem}
+
+    .navclass ul{display: flex; flex-direction: column; gap: 8px}
+    .navclass a{padding: 6px 0}
+
+    /* Responsive adjustments for testimonials */
+    .Testimonial{
+        padding: 40px 20px;
+    }
+
+    .Testimonial-title{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .Testimonial-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonials{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Responsive adjustments for contact footer */
+    .contact-footer{
+        padding: 40px 10px;
+    }
+
+    .container{
+        padding: 40px 15px;
+        max-width: 100%;
+    }
+
+    .divider{
+        width: 20%;
+    }
+
+    .title{
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .contact-info p{
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    .opening-hours p{
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    .opening-hours h3{
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .contact-form{
+        margin-top: 30px;
+    }
+
+    .form-group{
+        margin-left: 0;
+        padding: 8px;
+    }
+
+    .form-group input{
+        width: 100%;
+    }
+
+    .form-group textarea{
+        width: 100%;
+    }
+
+    .submit-btn{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+    
+
+
+
+
+
+
+
